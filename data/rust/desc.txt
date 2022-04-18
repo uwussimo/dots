@@ -1,0 +1,33 @@
+bat: Clone of cat(1) with syntax highlighting and Git integration
+btop: Resource monitor. C++ version and continuation of bashtop and bpytop
+cmake: Cross-platform make
+deno: Secure runtime for JavaScript and TypeScript
+exa: Modern replacement for 'ls'
+fd: Simple, fast and user-friendly alternative to find
+frum: Fast and modern Ruby version manager written in Rust
+gh: GitHub command-line tool
+gitui: Blazing fast terminal-ui for git written in rust
+glow: Render markdown on the CLI
+gping: Ping, but with a graph
+grex: Command-line tool for generating regular expressions
+hyperfine: Command-line benchmarking tool
+just: Handy way to save and run project-specific commands
+lolcat: Rainbows and unicorns in your console!
+make: Utility for directing compilation
+neofetch: Fast, highly customisable system info script
+neovim: Ambitious Vim-fork focused on extensibility and agility
+onefetch: Git repository summary on your terminal
+poetry: Python package management tool
+postgresql: Object-relational database system
+procs: Modern replacement for ps written by Rust
+python@3.9: Interpreted, interactive, object-oriented programming language
+ripgrep: Search tool like grep and The Silver Searcher
+ruby: Powerful, clean, object-oriented scripting language
+ruby-build: Install various Ruby versions and implementations
+rustup-init: Rust toolchain installer
+starship: Cross-shell prompt for astronauts
+tealdeer: Very fast implementation of tldr in Rust
+vlang: V programming language
+volta: JavaScript toolchain manager for reproducible environments
+xh: Friendly and fast tool for sending HTTP requests
+zoxide: Shell extension to navigate your filesystem faster
