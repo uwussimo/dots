@@ -83,4 +83,3 @@
 | <kbd>leader + x + q</kbd> | Quick fix                     |
 | <kbd>leader + x + r</kbd> | References                    |
 | <kbd>leader + x + w</kbd> | Show LSP workspace diagnostic |
-o

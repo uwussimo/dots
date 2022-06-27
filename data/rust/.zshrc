@@ -3,7 +3,7 @@ export ZSH="/Users/uwussimo/.oh-my-zsh"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
 export PATH="/Users/uwussimo/.deno/bin:$PATH"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -25,6 +25,7 @@ autoload -U compinit && compinit
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(frum init)"
+eval "$(jenv init -)"
 
 # Completion config
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
