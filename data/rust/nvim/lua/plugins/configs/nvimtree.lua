@@ -7,41 +7,42 @@ end
 local signs = require("utils").signs
 local colors = require("theme").colors
 
-vim.g.nvim_tree_special_files = {}
-vim.g.nvim_tree_add_trailing = 1
-vim.g.nvim_tree_show_icons = {
-    git = 0,
-    folders = 1,
-    files = 1,
-    folder_arrows = 0,
-}
-vim.g.nvim_tree_icons = {
-    default = "",
-    symlink = "",
-    git = {
-        unstaged = "✗",
-        staged = "✓",
-        unmerged = "",
-        renamed = "➜",
-        untracked = "★",
-        deleted = "",
-        ignored = "◌",
-    },
-    folder = {
-        arrow_open = "",
-        arrow_closed = "",
-        default = "",
-        open = "",
-        empty = "",
-        empty_open = "",
-        symlink = "",
-        symlink_open = "",
-    },
-}
-
 nvimtree.setup {
     disable_netrw = true,
     renderer = {
+        add_trailing = true,
+        special_files = {},
+        icons = {
+            show = {
+                git = false,
+                folder = true,
+                file = true,
+                folder_arrow = false,
+            },
+            glyphs = {
+                default = "",
+                symlink = "",
+                git = {
+                    unstaged = "✗",
+                    staged = "✓",
+                    unmerged = "",
+                    renamed = "➜",
+                    untracked = "★",
+                    deleted = "",
+                    ignored = "◌",
+                },
+                folder = {
+                    arrow_open = "",
+                    arrow_closed = "",
+                    default = "",
+                    open = "",
+                    empty = "",
+                    empty_open = "",
+                    symlink = "",
+                    symlink_open = "",
+                },
+            },
+        },
         indent_markers = {
             enable = true,
             icons = {
@@ -57,7 +58,7 @@ nvimtree.setup {
     open_on_tab = false,
     hijack_cursor = false,
     update_cwd = false,
-    update_to_buf_dir = {
+    hijack_directories = {
         enable = true,
         auto_open = true,
     },
@@ -95,7 +96,6 @@ nvimtree.setup {
         height = 30,
         hide_root_folder = true,
         side = "left",
-        auto_resize = true,
         mappings = {
             custom_only = false,
             list = {},
@@ -103,6 +103,11 @@ nvimtree.setup {
         number = false,
         relativenumber = false,
         signcolumn = "yes",
+    },
+    actions = {
+        open_file = {
+            resize_window = true,
+        },
     },
     trash = {
         cmd = "trash",
