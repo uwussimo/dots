@@ -62,7 +62,7 @@ hx /etc/vconsole.conf # content: KEYMAP=us
 ### Host files
 ```
 echo "uwu" >> /etc/hostname # give a name to the machine
-vim /etc/hosts.             # start editing the localhost routes
+hx /etc/hosts.              # start editing the localhost routes
 ```
 ```
 [Content => /etc/hosts]
